@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Darma Tanaya | Web & Game Developer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Portofolio resmi Darma Tanaya - Mahasiswa Ilmu Komputer Universitas Pendidikan Ganesha, Web & Game Developer.">
+    <meta property="og:title" content="Portofolio Darma Tanaya | Web & Game Developer">
+    <meta property="og:description" content="Portofolio resmi Darma Tanaya - Web & Game Developer Enthusiast.">
+    <meta property="og:image" content="./assets/foto.png">
+
+    <link rel="stylesheet" href="./output.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 w-full glass border-b border-slate-200 transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-violet-500 text-white font-bold flex items-center justify-center text-lg shadow-md">
+                        DT
+                    </span>
+                    <a href="#" class="font-extrabold text-xl tracking-tight text-slate-900">
+                        Darma<span class="text-blue-600">Tanaya</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="hover:text-blue-600 transition-colors">Tentang</a>
+                    <a href="#skills" class="hover:text-blue-600 transition-colors">Keahlian</a>
+                    <a href="#experience" class="hover:text-blue-600 transition-colors">Pengalaman</a>
+                    <a href="#projects" class="hover:text-blue-600 transition-colors">Proyek</a>
+                    <a href="#awards" class="hover:text-blue-600 transition-colors">Penghargaan</a>
+                    <a href="#contact" class="hover:text-blue-600 transition-colors">Kontak</a>
+                </nav>
+
+                <!-- Action Controls -->
+                <div class="flex items-center gap-3">
+                    <!-- CTA Mobile/Desktop -->
+                    <a href="#contact"
+                        class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-md hover:shadow-blue-500/25 transition-all">
+                        Hubungi Saya
+                    </a>
+
+                    <!-- Mobile Menu Hamburger Button -->
+                    <button id="mobile-menu-btn" aria-label="Toggle Mobile Menu"
+                        class="md:hidden p-2 rounded-xl text-slate-600 hover:bg-slate-100 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav menu di mobile -->
+        <div id="mobile-menu"
+            class="hidden md:hidden border-b border-slate-200 bg-white/95 backdrop-blur-md px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-50 hover:text-blue-600">Tentang</a>
+            <a href="#skills" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-50 hover:text-blue-600">Keahlian</a>
+            <a href="#experience" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-50 hover:text-blue-600">Pengalaman</a>
+            <a href="#projects" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-50 hover:text-blue-600">Proyek</a>
+            <a href="#awards" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-50 hover:text-blue-600">Penghargaan</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-50 hover:text-blue-600">Kontak</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+                    <!-- Text Column -->
+                    <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs sm:text-sm font-semibold tracking-wide">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            Mahasiswa Ilmu Komputer | Universitas Pendidikan Ganesha
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                            Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-500">Darma Tanaya</span>
+                        </h1>
+
+                        <div class="text-xl sm:text-2xl font-medium text-slate-600 h-8">
+                            Seorang <span id="typing-text" class="text-blue-600 font-semibold typing-cursor"></span>
+                        </div>
+
+                        <p class="text-base sm:text-lg text-slate-600 max-w-xl mx-auto md:mx-0 leading-relaxed">
+                            Saya adalah mahasiswa semester 5 Program Studi S1 Ilmu Komputer di Universitas Pendidikan Ganesha (Undiksha). Berdedikasi tinggi dalam menciptakan aplikasi web yang modern serta mengembangkan logika dan mekanik game yang interaktif.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+                            <a href="#projects"
+                                class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transform hover:-translate-y-0.5 transition-all duration-200">
+                                <i class="fas fa-briefcase mr-2"></i>Lihat Portofolio
+                            </a>
+                            <a href="#contact"
+                                class="px-6 py-3.5 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-800 font-medium transform hover:-translate-y-0.5 transition-all duration-200">
+                                <i class="fas fa-envelope mr-2"></i>Hubungi Saya
+                            </a>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="flex items-center justify-center md:justify-start gap-4 pt-4 text-slate-500">
+                            <a href="#" target="_blank" rel="noopener" aria-label="GitHub Profile"
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-all">
+                                <i class="fab fa-github text-lg"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn Profile"
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-all">
+                                <i class="fab fa-linkedin-in text-lg"></i>
+                            </a>
+                            <a href="https://www.instagram.com/darma.tanaya/" target="_blank" rel="noopener" aria-label="Instagram Profile"
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-all">
+                                <i class="fab fa-instagram text-lg"></i>
+                            </a>
+                            <a href="mailto:darma.tanaya@undiksha.ac.id" aria-label="Email Direct"
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-all">
+                                <i class="fas fa-envelope text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Avatar Card Column -->
+                    <div class="md:col-span-5 flex justify-center">
+                        <div class="relative group">
+                            <!-- Decorative background glow -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-violet-600 rounded-3xl blur-xl opacity-40 group-hover:opacity-75 transition duration-500">
+                            </div>
+
+                            <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden bg-slate-200 border-4 border-white shadow-2xl">
+                                <img src="./assets/foto.png"
+                                    onerror="this.src='https://placehold.co/400x400/2563eb/ffffff?text=Darma+Tanaya'"
+                                    alt="Foto Profil Darma Tanaya"
+                                    class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-slate-100/60 border-y border-slate-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Tentang Saya</h2>
+                    <p class="text-3xl font-extrabold text-slate-900">Membangun Solusi Web & Game yang Inovatif</p>
+                </div>
+
+                <div class="items-center">
+                    <div class="space-y-4 text-slate-600 leading-relaxed">
+                        <p>
+                            Saya adalah mahasiswa <strong class="text-slate-900">S1 Ilmu Komputer di Universitas Pendidikan Ganesha</strong> (Singaraja, Bali) dengan ketertarikan besar pada pengembangan web modern dan pembuatan game.
+                        </p>
+                        <p>
+                            Berpengalaman dalam merancang antarmuka website yang intuitif, responsif, serta membangun logika permainan (game mechanics). Saya juga aktif dalam kegiatan organisasi kampus dan kepanitiaan untuk terus melatih kepemimpinan, koordinasi tim, dan komunikasi.
+                        </p>
+                        <div class="pt-2">
+                            <button onclick="downloadCV()"
+                                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-medium text-sm transition-all shadow-md">
+                                <i class="fas fa-download"></i> Unduh Ringkasan CV
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 ">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Keahlian & Teknologi</h2>
+                    <p class="text-3xl font-extrabold text-slate-900">Teknologi & Toolsets Yang Saya Kuasai</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Game Development Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:border-blue-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-violet-100 text-violet-600 flex items-center justify-center text-2xl mb-6">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Game Development</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-violet-50 text-violet-600 text-xs font-medium border border-violet-200">Unity Engine</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Godot Engine</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Development Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:border-blue-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-6">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Web Development</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">HTML5 & CSS3</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-blue-50 text-blue-600 text-xs font-medium border border-blue-200">Tailwind CSS</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">JavaScript</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">PHP</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Design Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:border-blue-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-6">
+                            <i class="fas fa-pen-ruler"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Alat & Desain</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Git & GitHub</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Figma (UI/UX)</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">VS Code</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Blender 3D</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Photoshop</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-slate-100/60">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Galeri Karya</h2>
+                    <p class="text-3xl font-extrabold text-slate-900">Proyek Unggulan</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-2 mb-12">
+                    <button onclick="filterProjects('all')"
+                        class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium bg-blue-600 text-white transition-all shadow-sm"
+                        data-category="all">Semua</button>
+                    <button onclick="filterProjects('web')"
+                        class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium bg-white text-slate-600 hover:bg-slate-100 transition-all shadow-sm"
+                        data-category="web">Web Dev</button>
+                    <button onclick="filterProjects('game')"
+                        class="project-filter-btn px-4 py-2 rounded-xl text-sm font-medium bg-white text-slate-600 hover:bg-slate-100 transition-all shadow-sm"
+                        data-category="game">Game Dev</button>
+                </div>
+
+                <!-- Project Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project 1: Game Dev -->
+                    <div class="project-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                        data-category="game">
+                        <div class="relative overflow-hidden group h-48 bg-slate-100">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiHWNdNOUOcR-E7_goxRqSW5-zk4DNLym5n4GYW7azAnJ__rV7DWLV5DLGWD-cXMFQWE-E0d6YTWt0hNMVGBCfV1kYpp-eBu7q5DspXusB4WgHb75ezBZNCObpKp-pv28DNyAkNVz3McdiCCzpv6JCW1Gt728c1CvuCne9nyw3bPQWge0OXdpUv04PdhM/s1600/Halaman%20Utama%20%284%29.jpg"
+                                onerror="this.src='https://placehold.co/600x400/2563eb/ffffff?text=Game+Edukasi+2D'"
+                                alt="Game Edukasi 2D"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                                <button
+                                    onclick="openModal('Game Edukasi 2D', 'Game Edukasi 2D yang dikembangkan menggunakan Unity Engine & C#. Mensimulasikan Sistem Pernapasan untuk anak kelas 5 SD.', 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiHWNdNOUOcR-E7_goxRqSW5-zk4DNLym5n4GYW7azAnJ__rV7DWLV5DLGWD-cXMFQWE-E0d6YTWt0hNMVGBCfV1kYpp-eBu7q5DspXusB4WgHb75ezBZNCObpKp-pv28DNyAkNVz3McdiCCzpv6JCW1Gt728c1CvuCne9nyw3bPQWge0OXdpUv04PdhM/s1600/Halaman%20Utama%20%284%29.jpg', ['Unity', 'C#'])"
+                                    class="p-3 bg-white text-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-colors"
+                                    aria-label="Detail Proyek">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <!-- <a href="https://github.com" target="_blank" rel="noopener" aria-label="Github Repo"
+                                    class="p-3 bg-white text-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-violet-600 mb-2">Game Development</div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">STEAM RESPIRA</h3>
+                                <p class="text-sm text-slate-600 line-clamp-2">
+                                    Game Edukasi Tentang Sistem Pernapasan untuk anak kelas 5 SD.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mt-4 pt-4 border-t border-slate-100">
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-violet-50 text-violet-600">Unity</span>
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-slate-600">C#</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Web Dev -->
+                    <div class="project-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                        data-category="web">
+                        <div class="relative overflow-hidden group h-48 bg-slate-100">
+                            <img src=""
+                                onerror="this.src='https://placehold.co/600x400/2563eb/ffffff?text=Kalkulator+PPN'"
+                                alt="Portal Mahasiswa Modern"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                            <a href="./kalkulatorppn.html" target="_blank" rel="noopener" aria-label="Live Demo"
+                                    class="p-3 bg-white text-slate-900 rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="text-xs font-semibold text-blue-600 mb-2">Web Application</div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Kalkulator PPN 11%</h3>
+                                <p class="text-sm text-slate-600 line-clamp-2">
+                                    Aplikasi web untuk menghitung PPN 11% dengan antarmuka yang sederhana dan responsif.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mt-4 pt-4 border-t border-slate-100">
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-blue-50 text-blue-600">Tailwind</span>
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-slate-600">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Achievements Section -->
+        <section id="awards" class="py-20 bg-slate-100/60 border-y border-slate-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Prestasi & Sertifikasi</h2>
+                    <p class="text-3xl font-extrabold text-slate-900">Penghargaan & Pencapaian</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Award 1 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-5 hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-2xl shrink-0">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Indonesia Website Award • 2025</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Pemenang Indonesia Website Award 2025</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Pemenang Indonesia Website Award 2025 kategori Personal Website.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Award 2 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-5 hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 rounded-2xl bg-violet-500/10 text-violet-600 flex items-center justify-center text-2xl shrink-0">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-violet-600 uppercase tracking-wider">Kompetisi Nasional • 2023</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Juara 3 Web Design Integer#5 </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Meraih juara 3 dalam kompetisi desain web tingkat nasional yang diadakan oleh HMJ TI Undiksha dalam rangka Integer#5.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold tracking-widest text-blue-600 uppercase mb-2">Hubungi Saya</h2>
+                    <p class="text-3xl font-extrabold text-slate-900">Mari Berdiskusi & Berkolaborasi</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                    <!-- Contact Info Cards -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Email Direct</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">darma.tanaya@undiksha.ac.id</p>
+                            </div>
+                        </div>
+
+
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-violet-100 text-violet-600 flex items-center justify-center text-xl shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Lokasi</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">Singaraja, Bali - Indonesia</p>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                &copy; <span id="current-year"></span> Darma Tanaya. Dibuat dengan Tailwind CSS & JavaScript.
+            </p>
+            <div class="flex gap-6 text-xs text-slate-500">
+                <a href="#about" class="hover:text-blue-600">Tentang</a>
+                <a href="#skills" class="hover:text-blue-600">Keahlian</a>
+                <a href="#projects" class="hover:text-blue-600">Proyek</a>
+                <a href="#awards" class="hover:text-blue-600">Penghargaan</a>
+                <a href="#contact" class="hover:text-blue-600">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/70 backdrop-blur-sm transition-opacity">
+        <div class="bg-white rounded-2xl max-w-xl w-full p-6 shadow-2xl border border-slate-200 relative">
+            <button onclick="closeModal()" aria-label="Close Modal"
+                class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl p-2">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modal-img" src="" alt="Detail Proyek" class="w-full h-56 object-cover rounded-xl mb-4">
+            <h3 id="modal-title" class="text-xl font-bold text-slate-900 mb-2"></h3>
+            <p id="modal-desc" class="text-sm text-slate-600 mb-4 leading-relaxed"></p>
+            <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
+            <div class="flex justify-end gap-3">
+                <button onclick="closeModal()"
+                    class="px-4 py-2 text-sm font-medium rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
